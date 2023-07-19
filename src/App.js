@@ -9,7 +9,7 @@ function App() {
   const [user] = useAuthState(auth);
 
   return (
-    <div className="App">
+    <div className="App pt-14">
       <NavBar />
       {!user ? 
         <Welcome />

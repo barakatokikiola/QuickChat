@@ -17,8 +17,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="nav-bar">
-      <h1>Quick Chat</h1>
+    <nav className="nav-bar bg-white text-pink-700">
+      <h1 className="text-2xl font-medium">QuickChat</h1>
       {user ? (
         <button onClick={signOut} className="sign-out" type="button">
           Sign Out

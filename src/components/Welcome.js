@@ -2,6 +2,7 @@ import React from "react";
 import { auth } from "../firebase";
 import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 import GoogleSignin from "../img/btn_google_signin_dark_pressed_web.png";
+import welcomeimg  from '../img/welcome.svg';
 
 const Welcome = () => {
   const googleSignIn = () => {
@@ -10,11 +11,13 @@ const Welcome = () => {
   };
 
   return (
-    <main className="welcome">
-      <h2>Welcome to QuickChat.</h2>
-      <img src="/logo512.png" alt="ReactJs logo" width={50} height={50} />
-      <p>Sign in with Google to chat using QuickChat</p>
-      <button className="sign-in">
+    <main className="welcome md:flex md:flex-row-reverse mx-auto ">
+      <div className="container">
+      <img src={welcomeimg} alt="QuickChat logo" />
+      </div>
+    <div className="container my-auto py-auto">
+      <h1 className="my-5 font-semibold text-3xl">Sign in with Google</h1>
+    <button className="sign-in">
         <img
           onClick={googleSignIn}
           src={GoogleSignin}
@@ -22,6 +25,7 @@ const Welcome = () => {
           type="button"
         />
       </button>
+    </div>
     </main>
   );
 };
