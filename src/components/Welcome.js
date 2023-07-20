@@ -16,7 +16,7 @@ const Welcome = () => {
       <img src={welcomeimg} alt="QuickChat logo" />
       </div>
     <div className="container my-auto py-auto">
-      <h1 className="my-5 font-semibold text-3xl">Sign in with Google</h1>
+      <h1 className="my-5 font-semibold text-3xl">Sign in to <span className="text-pink-700">QuickChat</span> with Google</h1>
     <button className="sign-in">
         <img
           onClick={googleSignIn}

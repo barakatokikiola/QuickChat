@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { auth, db } from '../firebase';
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-
+import { BsSendFill } from 'react-icons/bs';
 const SendMessage = ({scroll}) => {
   const [ message, setMessage ] = useState('');
  
@@ -24,7 +24,7 @@ const SendMessage = ({scroll}) => {
   };
 
   return (
-    <form onSubmit={(event)=>sendMessage(event)} className="send-message">
+    <form onSubmit={(event)=>sendMessage(event)} className="send-message bg-slate-200 flex m-auto px-5 py-7 gap-3">
       <label htmlFor="messageInput" hidden>
         Enter Message
       </label>
@@ -34,10 +34,12 @@ const SendMessage = ({scroll}) => {
         id="messageInput"
         name="messageInput"
         type="text"
-        className="form-input__input"
+        className="w-full rounded-full shadow-xl drop-shadow-2xl"
         placeholder="type message..."
       />
-      <button type="submit">Send</button>
+      <button type="submit" className="text-white w-10 h-10 p-1 bg-pink-700 rounded-full">
+        <BsSendFill className="flex m-auto text-xl" />
+        </button>
     </form>
   );
 };

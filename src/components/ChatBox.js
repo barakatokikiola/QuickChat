@@ -27,7 +27,7 @@ const ChatBox = () => {
     return () => unsubscribe;
   },[]);
   return (
-    <main className="chat-box">
+    <main className="chat-box bg-slate-200 ">
       <div className="messages-wrapper">
         {
           messages?.map((message) => (

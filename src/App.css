@@ -42,14 +42,6 @@ input {
   height: 30px;
   width: auto;
 }
-.sign-out {
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: #88dded;
-  border: 1px solid #1c2c4c;
-  background-color: #1c2c4c;
-  font-weight: 600;
-}
 
 /* welcome page */
 .welcome {
@@ -68,7 +60,6 @@ input {
   margin-bottom: 60px;
 }
 .chat-bubble {
-  border-radius: 20px 20px 20px 0;
   padding: 15px;
   background-color: #7cc5d9;
   color: #1c2c4c;
@@ -110,14 +101,10 @@ input {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  padding: 20px 30px;
-  background-color: pink;
-  display: flex;
 }
 .send-message > input {
   height: 40px;
   padding: 10px 10px;
-  border-radius: 5px 0 0 5px;
   border: none;
   flex-grow: 1;
   background-color: white;
@@ -127,17 +114,7 @@ input {
 .send-message > input:placeholder {
   color: #ddd;
 }
-.send-message > :is(input, button):focus {
+.send-message > :is(input):focus {
   outline: none;
   border-bottom: 1px solid #7cc5d9;
-}
-.send-message > button {
-  width: 70px;
-  height: 40px;
-  padding: 5px 10px;
-  border-radius: 0 5px 5px 0;
-  color: #432433;
-  border: 1px solid #7cc5d9;
-  background-color: #d9eff5;
-  font-weight: 600;
 }
